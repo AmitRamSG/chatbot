@@ -1,0 +1,14 @@
+import random
+
+# Create a dictionary of possible bot responses
+responses = {
+    "hi": ["Hello!", "Hi there!", "Greetings!"],
+    "how are you": ["I'm doing well, thanks for asking.", "I'm great, how about you?", "Not too bad."],
+    "what's your name": ["My name is ChatBot.", "You can call me ChatBot.", "I'm ChatBot!"],
+    "default": ["Sorry, I don't understand.", "Can you say that again?", "I'm not sure what you mean."],
+}
+
+# Define a function to generate bot responses
+def respond(message):
+    if message.lower() in responses:
+        return random.choice(responses[message
